@@ -3,6 +3,8 @@ Repo_10_Bank_Marketing — EDA_dashboard.py  (13 Tabs)
 Author : Mohamed · M3
 Dataset: UCI Bank Marketing · 45,211 clients · Portuguese bank 2008-2013
 """
+import streamlit as st
+
 import pathlib, warnings
 import numpy as np
 import pandas as pd
@@ -12,7 +14,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from scipy import stats
 from statsmodels.stats.outliers_influence import variance_inflation_factor
-import streamlit as st
+
 
 warnings.filterwarnings("ignore")
 S = st.session_state
