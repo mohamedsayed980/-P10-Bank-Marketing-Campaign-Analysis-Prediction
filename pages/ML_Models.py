@@ -4,6 +4,8 @@ Author : Mohamed · M3
 Regression     → balance (account balance in euros)
 Classification → y_binary (1=subscribed, 0=not) — class_weight='balanced'
 """
+import streamlit as st
+
 import os, pathlib, warnings, time
 import numpy as np
 import pandas as pd
@@ -11,7 +13,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
-import streamlit as st
 import psutil
 
 from sklearn.model_selection   import train_test_split
